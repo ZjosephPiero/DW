@@ -1,0 +1,140 @@
+.category-tab {
+    padding: 12px 28px;
+    border-radius: 9999px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.3s;
+    color: #374151;
+}
+
+.category-tab:hover {
+    background-color: #f3f4f6;
+}
+
+.category-tab.active {
+    background-color: #fcd34d;
+    color: black;
+    font-weight: 700;
+}
+
+.product-card {
+    transition: all 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+/* Hace que todos los botones de acción en las tarjetas tengan el efecto hover */
+.product-card a.bg-yellow-400:hover, 
+.add-to-cart:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(250, 204, 21, 0.3);
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* NUEVO */
+.product-card {
+    transition: all 0.4s ease;
+    max-width: 100%;
+    margin-right: auto;
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* MODO OSCURO */
+
+.dark {
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Fondo general */
+.dark body,
+.dark main,
+.dark section,
+.dark footer {
+    background-color: #0f172a !important;
+}
+
+/* Tarjetas */
+.dark .product-card,
+.dark .bg-white,
+.dark nav,
+.dark header {
+    background-color: #1e293b !important;
+    color: white !important;
+}
+
+/* Textos */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark p,
+.dark span,
+.dark a {
+    color: white !important;
+}
+
+/* Textos grises */
+.dark .text-gray-600,
+.dark .text-gray-500,
+.dark .text-gray-800 {
+    color: #cbd5e1 !important;
+}
+
+/* Inputs o cajas */
+.dark .bg-gray-50 {
+    background-color: #0f172a !important;
+}
+
+/* Hover categorías */
+.dark .category-tab:hover {
+    background-color: #334155;
+}
+
+/* Categoría activa */
+.dark .category-tab.active {
+    background-color: #facc15;
+    color: black !important;
+}
+
+/* Botones */
+.dark .add-to-cart,
+.dark a.bg-yellow-400 {
+    color: black !important;
+}
+
+/* Footer inferior */
+.dark footer {
+    border-color: #334155;
+}
+
+main {
+    width: 100%;
+}
+
+.dark main {
+    background-color: #020617 !important;
+}
+
+/* CENTRAR Y AGRANDAR CONTENIDO */
+.max-w-7xl {
+    max-width: 1400px !important;
+}
+
+body {
+    overflow-x: hidden;
+}

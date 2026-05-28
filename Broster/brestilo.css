@@ -1,0 +1,131 @@
+/* ====================== BROSTER.CSS ====================== */
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f9fafb;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para tarjetas y secciones */
+.bg-white {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Botones y elementos interactivos */
+button, .cursor-pointer {
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Sección de Extras y Bebidas */
+label {
+    transition: all 0.2s ease;
+}
+
+label:hover {
+    background-color: #fefce8;
+    transform: translateX(4px);
+}
+
+/* ==================== OTRAS BEBIDAS ==================== */
+
+.bebida-card {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.bebida-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Colores más suaves y bonitos como en la imagen */
+.bg-yellow-100 { background-color: #fef9c3; }
+.bg-emerald-100 { background-color: #d1fae5; }
+.bg-amber-100 { background-color: #fef3c7; }
+
+.bg-yellow-200:hover { background-color: #fde047; }
+.bg-emerald-200:hover { background-color: #a7f3d0; }
+.bg-amber-200:hover { background-color: #fde68c; }
+
+/* Textarea de instrucciones */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    border: 2px solid #e5e7eb;
+}
+
+textarea:focus {
+    border-color: #fcd34d;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.2);
+}
+
+/* Botón fijo Agregar al Carrito */
+.fixed-bottom {
+    box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ====================== BARRA INFERIOR ====================== */
+.fixed {
+    box-shadow: 0 -8px 10000px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+/* Asegurar que se vea bien en todas las resoluciones */
+@media (max-width: 768px) {
+    .fixed div {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .fixed div {
+        padding: 16px 24px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Colores personalizados */
+.text-yellow-primary {
+    color: #fcd34d;
+}
+
+.bg-yellow-primary {
+    background-color: #fcd34d;
+}
+
+/* MOVER BOTON A LA DERECHA */
+.barra-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.boton-carrito {
+    margin-left: 220px;
+}

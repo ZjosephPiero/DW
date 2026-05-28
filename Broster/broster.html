@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollo Broster - Brosteria Chevis</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
+    <link href="brestilo.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 font-inter">
+
+    <!-- Header simplificado -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+            <button onclick="window.history.back()" class="flex items-center gap-2 text-gray-600 hover:text-black">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span class="font-medium">Volver</span>
+            </button>
+            <div class="flex items-center gap-3">
+                <span class="text-2xl">🍗</span>
+                <h1 class="text-xl font-bold">Brosteria Chevis</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 pb-40">
+
+        <!-- Imagen grande -->
+        <img src="imagenes/Broster - Pedir.png" alt="Pollo Broster" class="w-full rounded-3xl shadow-xl mt-6">
+
+        <div class="mt-6">
+            <span class="bg-yellow-400 text-black text-sm font-bold px-4 py-1 rounded-full">BROSTER</span>
+            <h1 class="text-4xl font-bold mt-3">Pollo Broster</h1>
+            <p class="text-gray-600 mt-1">Deliciosa pieza de pollo broster dorada y crujiente, servida con papas fritas
+                y ensalada fresca.</p>
+
+            <div class="flex items-center gap-4 mt-4">
+                <span class="text-3xl font-bold text-red-600">S/ 10.00</span>
+            </div>
+        </div>
+
+        <!-- Selecciona tu pieza -->
+        <div class="mt-8">
+            <h3 class="font-semibold mb-3">Selecciona tu pieza</h3>
+            <div class="space-y-3">
+                <label
+                    class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer border border-yellow-400">
+                    <div class="flex items-center gap-3">
+                        <input type="radio" name="pieza" checked class="w-5 h-5 accent-yellow-400">
+                        <span>Pecho</span>
+                    </div>
+                    <span class="text-green-600 font-medium"></span>
+                </label>
+                <label class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <input type="radio" name="pieza" class="w-5 h-5 accent-yellow-400">
+                        <span>Pierna</span>
+                    </div>
+                    <span class="text-green-600 font-medium"></span>
+                </label>
+                <label class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <input type="radio" name="pieza" class="w-5 h-5 accent-yellow-400">
+                        <span>Entrepierna</span>
+                    </div>
+                    <span class="text-green-600 font-medium"></span>
+                </label>
+            </div>
+        </div>
+
+        <!-- ¿Con ensalada? -->
+        <div class="mt-8">
+            <h3 class="font-semibold mb-3">¿Con ensalada?</h3>
+            <div class="flex gap-3">
+                <button class="flex-1 py-4 bg-yellow-400 text-black font-bold rounded-2xl">Sí</button>
+                <button class="flex-1 py-4 bg-white border font-medium rounded-2xl">No</button>
+            </div>
+        </div>
+
+        <!-- Cremas -->
+        <div class="mt-8">
+            <h3 class="font-semibold mb-4 text-lg">Cremas</h3>
+            <div class="space-y-2">
+                <label
+                    class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer hover:bg-gray-50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 accent-yellow-400">
+                        <span>Mayonesa</span>
+                    </div>
+                    <span class="text-green-600 font-medium cursor-pointer">+</span>
+                </label>
+
+                <label
+                    class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer hover:bg-gray-50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 accent-yellow-400">
+                        <span>Mostaza</span>
+                    </div>
+                    <span class="text-green-600 font-medium cursor-pointer">+</span>
+                </label>
+
+                <label
+                    class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer hover:bg-gray-50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 accent-yellow-400">
+                        <span>Ketchup</span>
+                    </div>
+                    <span class="text-green-600 font-medium cursor-pointer">+</span>
+                </label>
+
+                <label
+                    class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer hover:bg-gray-50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 accent-yellow-400">
+                        <span>Ocopa</span>
+                    </div>
+                    <span class="text-green-600 font-medium cursor-pointer">+</span>
+                </label>
+
+                <label
+                    class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer hover:bg-gray-50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 accent-yellow-400">
+                        <span>Crema de ají</span>
+                    </div>
+                    <span class="text-green-600 font-medium cursor-pointer">+</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- BEBIDAS - DISEÑO LADO A LADO -->
+        <div class="mt-10 grid md:grid-cols-2 gap-8"> <!-- GASEOSAS (Izquierda) -->
+            <div>
+                <h3 class="font-semibold mb-4 text-lg">Gaseosas</h3>
+                <div class="space-y-2"> <label
+                        class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer hover:bg-gray-50">
+                        <div class="flex items-center gap-3"> <input type="checkbox" value="3.50"
+                                class="gaseosa-checkbox w-5 h-5 accent-yellow-400" onclick="calcularTotal()"> <span>Inca Kola</span>
+                        </div> <span class="text-green-600 font-medium">+ S/ 3.50</span>
+                    </label> <label
+                        class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer hover:bg-gray-50">
+                        <div class="flex items-center gap-3"> <input type="checkbox" value="3.50"
+                                class="gaseosa-checkbox w-5 h-5 accent-yellow-400"" onclick="calcularTotal()"> <span>Coca Cola</span>
+                        </div> <span class="text-green-600 font-medium">+ S/ 3.50</span>
+                    </label> <label
+                        class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer hover:bg-gray-50">
+                        <div class="flex items-center gap-3"> <input type="checkbox" value="1.50"
+                                class="gaseosa-checkbox w-5 h-5 accent-yellow-400" onclick="calcularTotal()"> <span>Big Cola</span>
+                        </div> <span class="text-green-600 font-medium">+ S/ 1.50</span>
+                    </label> <label
+                        class="flex items-center justify-between bg-white p-4 rounded-2xl cursor-pointer hover:bg-gray-50">
+                        <div class="flex items-center gap-3"> <input type="checkbox" value="2.00" 
+                            class="gaseosa-checkbox w-5 h-5 accent-yellow-400" onclick="calcularTotal()"> <span>Agua San Luis</span>
+                        </div> <span class="text-green-600 font-medium">+ S/ 2.00</span>
+                    </label> </div>
+            </div> <!-- OTRAS BEBIDAS (Derecha) -->
+            <div>
+                <h3 class="font-semibold mb-4 text-lg">Otras Bebidas</h3>
+                <div class="grid grid-cols-3 gap-3">
+                    <div onclick="selectBebida(this, 2.00)"
+                        class="bebida-card bg-white border border-gray-100 rounded-2xl p-3 text-center cursor-pointer transition-all">
+                        <div class="h-16 flex items-center justify-center text-4xl mb-2">☕</div>
+                        <p class="font-medium text-sm">Quinua</p>
+                        <p class="text-green-600 font-bold">S/ 2.00</p>
+                    </div>
+                    <div onclick="selectBebida(this, 2.00)"
+                        class="bebida-card bg-white border border-gray-100 rounded-2xl p-3 text-center cursor-pointer transition-all">
+                        <div class="h-16 flex items-center justify-center text-4xl mb-2">🥛</div>
+                        <p class="font-medium text-sm">Maca</p>
+                        <p class="text-green-600 font-bold">S/ 2.00</p>
+                    </div>
+                    <div onclick="selectBebida(this, 2.00)"
+                        class="bebida-card bg-white border border-gray-100 rounded-2xl p-3 text-center cursor-pointer transition-all">
+                        <div class="h-16 flex items-center justify-center text-4xl mb-2">🥛</div>
+                        <p class="font-medium text-sm">Soya</p>
+                        <p class="text-green-600 font-bold">S/ 2.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BARRA INFERIOR - CON TOTAL DINÁMICO -->
+            <div class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-2xl z-50">
+                <div class="max-w-4xl mx-auto px-6 py-4 barra-inferior">
+                    <div class="flex items-center gap-4">
+
+                        <div>
+                            <p class="text-sm text-gray-500">Total</p>
+                            <p id="total-precio" class="text-3xl font-bold text-black">
+                                S/ 10.00
+                            </p>
+                        </div>
+
+
+
+
+                        <!-- BOTONES -->
+                        <div class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-full">
+
+                            <button onclick="cambiarCantidad(-1)"
+                                class="w-9 h-9 rounded-full bg-white shadow text-xl font-bold hover:bg-gray-200">
+                                -
+                            </button>
+
+                            <span id="cantidad-broster" class="text-lg font-bold">
+                                1
+                            </span>
+
+                            <button onclick="cambiarCantidad(1)"
+                                class="w-9 h-9 rounded-full bg-yellow-400 text-xl font-bold hover:bg-yellow-500">
+                                +
+                            </button>
+
+                        </div>
+
+                        <!-- BOTON CARRITO -->
+                        <button onclick="agregarAlCarrito()"
+                            class="boton-carrito bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3.5 rounded-full transition-all active:scale-95 shadow-md">
+                            Agregar al Carrito
+                        </button>
+
+                    </div>
+
+
+                    <footer>
+
+                        <script src="broster.js"></script>
+
+                    </footer>
+    </main>
+
+    >
+    <script src="broster.js"></script>
+
+</body>
+
+</html>
